@@ -1,0 +1,22 @@
+{
+  "name": "graph-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Testing\"",
+    "lint": "echo \"Linting\"",
+    "build": "echo \"Building\"",
+    "start": "sls offline"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-lambda": "^2.5.0",
+    "graphql": "^14.3.0",
+    "serverless": "^1.42.3"
+  },
+  "devDependencies": {
+    "serverless-offline": "^4.10.2"
+  }
+}

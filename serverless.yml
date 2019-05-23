@@ -1,0 +1,23 @@
+
+service: graph-example 
+
+provider:
+  name: aws
+  runtime: nodejs10
+
+plugins:
+  - serverless-offline
+
+custom: 
+  serverless-offline: 
+    port: 4000
+
+functions:
+  graphql:
+    handler: src/handler.graphql
+    events: 
+      - http: 
+          path: /graphql
+          method: post
+
+
